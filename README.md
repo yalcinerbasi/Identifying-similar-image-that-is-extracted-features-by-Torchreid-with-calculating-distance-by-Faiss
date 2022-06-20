@@ -41,7 +41,7 @@ conda install -c pytorch/label/nightly faiss-cpu
 # Installation
 
 cd ../ ## go to main directory
-### show path of test image
+### give path of test image
 bash pathofimage.sh input_image/test.png 
 
 ### activate enviroment
