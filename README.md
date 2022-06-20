@@ -28,7 +28,7 @@ cd deep-person-reid/
 ###### make sure `which python` and `which pip` point to the correct path
 pip install -r requirements.txt
 
-##### install torch and torchvision (select the proper cuda version to suit your machine)
+### install torch and torchvision (select the proper cuda version to suit your machine)
 conda install pytorch torchvision cudatoolkit=9.0 -c pytorch
 
 ### install torchreid (don't need to re-build it if you modify the source code)
