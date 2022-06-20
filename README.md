@@ -1,6 +1,6 @@
 # Getting Started
 
-This project has been developed that compares a person image in input_image folder with person images in all_images folder and returns the closest person images to output_images.
+This project has been developed that compares a person image in input_image folder with people images in all_images folder and returns the closest people images to output_images.
 
 5 different people images were captured from the video at 5 different times and their coordinates were determined and cut using BBox Tool (https://github.com/puzzledqs/BBox-Label-Tool)
 
