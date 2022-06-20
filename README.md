@@ -17,37 +17,37 @@ Python (Conda Enviroment) and Bash Script are used to complete these tasks.
 
 ### Dependencies
 
-#create environment
+# create environment
 conda create --name torchreid_faiss python=3.7
 conda activate torchreid_faiss
 
 git clone https://github.com/KaiyangZhou/deep-person-reid.git
 cd deep-person-reid/
 
-#install dependencies
-#make sure `which python` and `which pip` point to the correct path
+# install dependencies
+# make sure `which python` and `which pip` point to the correct path
 pip install -r requirements.txt
 
-#install torch and torchvision (select the proper cuda version to suit your machine)
+# install torch and torchvision (select the proper cuda version to suit your machine)
 conda install pytorch torchvision cudatoolkit=9.0 -c pytorch
 
-#install torchreid (don't need to re-build it if you modify the source code)
+# install torchreid (don't need to re-build it if you modify the source code)
 python setup.py develop
 
-#install faiss
+# install faiss
 conda install -c pytorch faiss-cpu
 conda install -c pytorch/label/nightly faiss-cpu
 
 ### Installation
 
 cd ../ ## go to main directory
-#show path of test image
+# show path of test image
 bash pathofimage.sh input_image/test.png 
 
-#activate enviroment
+# activate enviroment
 conda activate torchreid_faiss
 
-#run python script
+# run python script
 python script.py
 
 ### Contact
